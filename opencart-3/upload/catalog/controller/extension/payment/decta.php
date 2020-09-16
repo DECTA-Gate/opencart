@@ -52,7 +52,7 @@ class ControllerExtensionPaymentDecta extends Controller
         );
 
         $this->addUserData($decta, $order_info, $params);
-        $total = $this->currency->format($order_info['total'], $this->session->data['currency']);
+        $total = $this->currency->format($order_info['total'], $this->session->data['currency'], '', false);
 
         $params['products'][] = array(
             'price' => round($total, 2),
