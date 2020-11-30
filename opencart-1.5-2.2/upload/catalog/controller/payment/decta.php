@@ -82,7 +82,7 @@ class ControllerPaymentDecta extends Controller
 
         $params['products'][] = array(
             'price' => round($total, 2),
-            'title' => 'default',
+            'title' => $this->language->get('payment_decta_invoice_for_payment') . $order_id,
             'quantity' => 1
         );
 

@@ -27,6 +27,6 @@ $_['entry_geo_zone'] = 'Geo Zone';
 
 // Error
 $_['error_public_key'] = 'Public key is empty!';
-$_['error_private_key'] = 'Private key empty!';
+$_['error_private_key'] = 'Private key is empty!';
 $_['error_permission'] = 'Warning: You do not have permission to modify the payment module!';
 ?>

@@ -11,11 +11,9 @@ $_['text_pay'] = 'Decta';
 $_['text_card'] = 'Credit Card';
 
 // Entry
-$_['entry_public_key'] = 'Public key';
 $_['entry_private_key'] = 'Secret key';
 $_['entry_public_key'] = 'Public key';
 $_['entry_public_key_help'] = 'Contact your gateway manager to obtain it';
-$_['entry_private_key'] = 'Secret key';
 $_['entry_private_key_help'] = $_['entry_public_key_help'];
 
 $_['entry_order_status_pending_text'] = 'Pending Status';
