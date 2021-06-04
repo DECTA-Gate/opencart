@@ -35,7 +35,10 @@ class ControllerExtensionPaymentDecta extends Controller
         $order_info = $this->model_checkout_order->getOrder($order_id);
 
         $language = $this->_language($this->session->data['language']);
-
+        
+        $decta->log_info('===LANGUAGE_1=== ' . print_r($this->session->data['language'], true));
+        $decta->log_info('===LANGUAGE_2=== ' . $language);
+        
         $decta = new DectaApi(
             $this->private_key,
             $this->public_key,
