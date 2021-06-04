@@ -36,14 +36,14 @@ class ControllerExtensionPaymentDecta extends Controller
 
         $language = $this->_language($this->session->data['language']);
         
-        $decta->log_info('===LANGUAGE_1=== ' . print_r($this->session->data['language'], true));
-        $decta->log_info('===LANGUAGE_2=== ' . $language);
-        
         $decta = new DectaApi(
             $this->private_key,
             $this->public_key,
             new DectaLoggerOpencart(new \Log('decta.log'))
         );
+        
+        $decta->log_info('===LANGUAGE_1=== ' . print_r($this->session->data['language'], true));
+        $decta->log_info('===LANGUAGE_2=== ' . $language);
 
         $params = array(
             'number' => $order_id,
