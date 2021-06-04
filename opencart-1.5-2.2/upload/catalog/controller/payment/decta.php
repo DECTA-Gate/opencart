@@ -71,7 +71,7 @@ class ControllerPaymentDecta extends Controller
         $params = array(
             'number' => $order_id,
             'referrer' => 'opencart module ' . DECTA_MODULE_VERSION,
-            'language' =>  $this->_language('en'),
+            'language' => $language/*$this->_language('en')*/,
             'success_redirect' => $this->url->link('payment/decta/callback_success', '', 'SSL'),
             'failure_redirect' => $this->url->link('payment/decta/callback_failure&id='.$order_id, '', 'SSL'),
             'currency' => $order_info['currency_code']
